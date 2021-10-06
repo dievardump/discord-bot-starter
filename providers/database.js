@@ -15,16 +15,16 @@ export default {
 	},
 
 	async addUserAddress(userId, address) {
-		if (!database.users) {
-			database.users = {};
+		if (!database.earlyBirds) {
+			database.earlyBirds = {};
 		}
 
-		database.users[userId] = address;
+		database.earlyBirds[userId] = address;
 
 		await this.save();
 	},
 
 	getUserAddress(userId) {
-		return database.users?.[userId];
+		return database.earlyBirds?.[userId];
 	},
 };

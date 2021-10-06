@@ -5,7 +5,7 @@ import database from './providers/database.js';
 import EarlyBirdsController from './controllers/early-birds.js';
 
 // list of channels names where commands are accepted
-const channels = ['bot-commands'];
+const channels = ['private-bot-commands'];
 
 // parse a message and checks if the first character is the "command start" character
 function parseMessage(msg) {
